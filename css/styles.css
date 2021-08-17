@@ -14,6 +14,7 @@
   --backdrop: rgba(0, 0, 0, 0.2);
   --duration: 250ms;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --modal-fill-border: rgba(33, 33, 33, 0.2);
 }
 
 body {
@@ -55,7 +56,7 @@ p {
   padding: 94px 0;
 }
 
-/* Акцентная кнопка */
+/* Акцентные кнопки */
 
 .hero-button,
 .modal-submit,
@@ -72,6 +73,19 @@ p {
   border: 1px solid transparent;
   color: var(--accent-text-color);
   background-color: var(--accent-color);
+
+  transition-property: background-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic);
+}
+
+.hero-button:hover,
+.hero-button:focus,
+.modal-submit:hover,
+.modal-submit:focus,
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--hero-button-hover);
 }
 
 /* Логтип */
@@ -212,25 +226,9 @@ header {
   padding: 10px 32px;
   margin: 0 auto;
 
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.6px;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  min-width: 200px;
-  color: var(--accent-text-color);
-  background-color: var(--accent-color);
-
   transition-property: background-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
-}
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--hero-button-hover);
 }
 
 /* Наша команда */
@@ -630,9 +628,11 @@ address {
 
 .subscribe-mail {
   margin-right: 12px;
+  padding-left: 16px;
   width: 358px;
   height: 50px;
 
+  color: var(--accent-text-color);
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -693,9 +693,7 @@ address {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.1);
 }
-.modal svg {
-  fill: currentColor;
-}
+
 .modal-close {
   position: absolute;
   top: 8px;
@@ -706,20 +704,129 @@ address {
   background-color: var(--background-color);
   border: 1px solid var(--border-color);
   cursor: pointer;
+  fill: var(--title-color);
 
-  transition-property: color;
+  transition-property: fill;
   transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
 }
 
 .modal-close:focus,
 .modal-close:hover {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .input-menu {
-  margin: 0px 40px;
+  margin: 0px 40px 20px;
 }
 .modal-title {
-  margin: 40px 40px 12px 40px;
+  margin: 40px auto 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.input {
+  display: block;
+  margin-bottom: 10px;
+}
+.input-div {
+  position: relative;
+}
+.input-field {
+  height: 40px;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+.input-label,
+.comment-field::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.input-label {
+  margin-bottom: 4px;
+}
+
+.input-svg {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  fill: var(--title-color);
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic);
+}
+
+.input-field,
+.comment-field {
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic);
+}
+.input-field:hover,
+.input-field:focus,
+.comment-field:hover,
+.comment-field:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.input-field:focus + .input-svg,
+.input-field:hover + .input-svg {
+  fill: var(--accent-color);
+}
+
+.comment-field {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.comment-field::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.contract-agree {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.hide-checkbox {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.hide-checkbox:focus + .agree-check {
+  border: 2px solid var(--accent-color);
+}
+
+.modal-submit {
+  display: block;
+  margin: 0px auto 40px;
+}
+.agree-check {
+  margin-right: 8px;
+  box-sizing: border-box;
+  border: 2px solid var(--title-color);
+  border-radius: 2px;
+}
+
+.hide-checkbox:checked + .agree-check {
+  border: none;
+  fill: var(--accent-text-color);
+  background-color: var(--accent-color);
 }

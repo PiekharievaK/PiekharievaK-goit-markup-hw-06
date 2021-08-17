@@ -452,16 +452,16 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-title">Подпишитесь на рассылку</p>
+          <div class="subscribe-menu">
           <input type="email" class="subscribe-mail" placeholder="E-mail" />
-          <button type="button" class="subscribe-button">
-            <div class="subscribe-content">
-              <p>Подписаться</p>
-              <svg width="24" height="24">
+          <button  type="button" class="subscribe-button">
+              <span class="subscribe-content">Подписаться</span>
+              <svg class="subscribe-svg" width="24" height="24">
                 <use href="./images/symbol.svg#icon-subscribe"></use>
               </svg>
-            </div>
-          </button>
-        </div>
+            </button>
+          </div>
+          </div>    
       </div>
     </footer>
 
@@ -479,12 +479,13 @@
 
         <!-- Поля ввода модалки -->
         <div class="input-menu">
-          <label class="input">
-            <p class="input-label">Имя</p>
+          <label  for="Name" class="input">
+            <span class="input-label">Имя</span></label>
             <div class="input-div">
               <input
                 type="text"
                 name="Name"
+                id="Name"
                 placeholder=" "
                 class="input-field"
               />
@@ -492,37 +493,39 @@
                 <use href="./images/symbol.svg#input-name"></use>
               </svg>
             </div>
-          </label>
+          
 
-          <label class="input">
-            <p class="input-label">Телефон</p>
+          <label class="input" for="Phone">
+            <span class="input-label">Телефон</span>  </label>
             <div class="input-div">
               <input
                 type="tel"
                 name="Phone"
+                id="Phone"
                 placeholder=" "
                 class="input-field"/>
               <svg class="input-svg" height="18px" width="18px">
                 <use href="./images/symbol.svg#input-tel"></use>
               </svg>
             </div>
-          </label>
+         
 
-          <label class="input">
-            <p class="input-label">Почта</p>
+          <label class="input" for="Mail">
+            <span class="input-label">Почта</span></label>
             <div class="input-div">
               <input   type="email"
                 name="Mail"
+                id="Mail"
                 placeholder=" "
                 class="input-field"/>
               <svg class="input-svg" height="18px" width="18px">
                 <use href="./images/symbol.svg#input-mail"></use>
               </svg>
             </div>
-          </label>
+          
 
           <label>
-            <p class="input-label">Комментарий</p>
+            <span class="input-label">Комментарий</span>
             <textarea
               name="comment"
               rows="10"
@@ -537,9 +540,9 @@
           <svg class="agree-check" width="16px" height="15px">
             <use href="./images/symbol.svg#icon-check"></use>
           </svg>
-          <p>
+          <span>
             Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
-          </p>
+          </span>
         </label>
 
         <button type="submit" class="modal-submit">Отправить</button>

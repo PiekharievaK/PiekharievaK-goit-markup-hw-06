@@ -640,13 +640,13 @@ address {
   border-radius: 4px;
 }
 
+
 .subscribe-content {
-  display: flex;
-}
-.subscribe-content p {
   margin-right: 10px;
 }
+
 .subscribe-button {
+  display: flex;
   padding: 10px 30px;
   fill: currentColor;
 }
@@ -655,6 +655,9 @@ address {
   color: var(--footer-text-color);
 }
 
+.subscribe-menu{
+  display: flex;
+}
 /* Модальное окно */
 .backdrop {
   position: fixed;
@@ -730,7 +733,7 @@ address {
 }
 
 .input {
-  display: block;
+
   margin-bottom: 10px;
 }
 .input-div {

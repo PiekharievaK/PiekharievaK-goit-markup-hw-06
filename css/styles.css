@@ -10,6 +10,7 @@
   --border-color: #eeeeee;
   --clients-icon-color: #afb1b8;
   --exemples-overflow-collor: rgba(33, 150, 243, 0.8);
+  --footer-text-color: rgba(255, 255, 255, 0.6);
   --backdrop: rgba(0, 0, 0, 0.2);
   --duration: 250ms;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
@@ -52,6 +53,25 @@ p {
 }
 .section {
   padding: 94px 0;
+}
+
+/* Акцентная кнопка */
+
+.hero-button,
+.modal-submit,
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: var(--accent-text-color);
+  background-color: var(--accent-color);
 }
 
 /* Логтип */
@@ -556,6 +576,7 @@ address {
   display: inline-block;
   height: 80px;
   width: 206px;
+  margin-right: 93px;
 }
 .social-links {
   display: flex;
@@ -595,6 +616,43 @@ address {
 .soc-link:hover,
 .soc-link:focus {
   background-color: var(--accent-color);
+}
+
+.subscribe-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+}
+
+.subscribe-mail {
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe-content {
+  display: flex;
+}
+.subscribe-content p {
+  margin-right: 10px;
+}
+.subscribe-button {
+  padding: 10px 30px;
+  fill: currentColor;
+}
+
+.subscribe-mail::placeholder {
+  color: var(--footer-text-color);
 }
 
 /* Модальное окно */
@@ -665,18 +723,3 @@ address {
 .modal-title {
   margin: 40px 40px 12px 40px;
 }
-
-.modal-submit {
-width: 200px;
-height: 50px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.6px;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  min-width: 200px;
-  color: var(--accent-text-color);
-  background-color: var(--accent-color);

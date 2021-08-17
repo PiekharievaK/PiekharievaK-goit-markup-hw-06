@@ -186,7 +186,7 @@ header {
 /* Заголовки */
 .section-title {
   margin-bottom: 50px;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -361,11 +361,11 @@ header {
 /* Наши клиенты */
 
 .clients {
-  display: inline-flex;
+  display: flex;
 }
 
 .clients .item {
-  width: calc((100%-150px) / 6);
+  width: calc((100% - 150px) / 6);
 }
 .clients .item:not(:last-child) {
   margin-right: 30px;
@@ -565,13 +565,15 @@ address {
 }
 
 .footer-container {
-  display: flex;
+display: flex;
+align-items: center;
+justify-content: space-between;
 }
 .footer-contacts {
+  width: 231px;
   margin-right: 70px;
 }
 .join-us {
-  display: inline-block;
   height: 80px;
   width: 206px;
   margin-right: 93px;
@@ -679,7 +681,8 @@ address {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
-  height: 581px;
+
+  padding: 40px;
 
   border-radius: 4px;
   background-color: var(--background-color);
@@ -720,10 +723,12 @@ address {
 }
 
 .input-menu {
-  margin: 0px 40px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 .modal-title {
-  margin: 40px auto 12px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -734,10 +739,11 @@ address {
 
 .input {
 
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 .input-div {
   position: relative;
+  margin-bottom: 10px;
 }
 .input-field {
   height: 40px;
@@ -752,6 +758,7 @@ address {
   letter-spacing: 0.01em;
 }
 .input-label {
+  display: flex;
   margin-bottom: 4px;
 }
 
@@ -765,6 +772,8 @@ address {
   transition-timing-function: var(--cubic);
 }
 
+
+
 .input-field,
 .comment-field {
   width: 448px;
@@ -775,10 +784,13 @@ address {
   transition-duration: var(--duration);
   transition-timing-function: var(--cubic);
 }
+
+
 .input-field:hover,
 .input-field:focus,
 .comment-field:hover,
-.comment-field:focus {
+.comment-field:focus,
+.input-svg:hover {
   border-color: var(--accent-color);
   outline: none;
 }
@@ -819,13 +831,17 @@ address {
 
 .modal-submit {
   display: block;
-  margin: 0px auto 40px;
+  margin: auto;
+
 }
 .agree-check {
   margin-right: 8px;
   box-sizing: border-box;
   border: 2px solid var(--title-color);
   border-radius: 2px;
+  transition-property: fill, var(--background-color), border ;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic);
 }
 
 .hide-checkbox:checked + .agree-check {

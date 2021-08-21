@@ -452,15 +452,15 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-title">Подпишитесь на рассылку</p>
-          <div class="subscribe-menu">
-          <input type="email" class="subscribe-mail" placeholder="E-mail" />
-          <button  type="button" class="subscribe-button">
+          <form name="subscribe" class="subscribe-menu">
+            <input type="email" class="subscribe-mail" placeholder="E-mail" />
+            <button  type="submit" class="subscribe-button">
               <span class="subscribe-content">Подписаться</span>
               <svg class="subscribe-svg" width="24" height="24">
                 <use href="./images/symbol.svg#icon-subscribe"></use>
               </svg>
             </button>
-          </div>
+          </form>
           </div>    
       </div>
     </footer>
@@ -478,7 +478,7 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
         <!-- Поля ввода модалки -->
-        <div class="input-menu">
+        <form name="signup_form" class="input-menu">
           <label  for="Name" class="input">
             <span class="input-label">Имя</span></label>
             <div class="input-div">
@@ -533,9 +533,9 @@
               placeholder="Введите текст"
             ></textarea>
           </label>
-        </div>
+        
 
-        <label class="contract-agree">
+          <label class="contract-agree">
           <input type="checkbox" name="checkbox" class="hide-checkbox" />
           <svg class="agree-check" width="16px" height="15px">
             <use href="./images/symbol.svg#icon-check"></use>
@@ -546,6 +546,7 @@
         </label>
 
         <button type="submit" class="modal-submit">Отправить</button>
+      </form>
       </div>
     </div>
 

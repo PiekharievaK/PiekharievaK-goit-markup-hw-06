@@ -786,17 +786,13 @@ justify-content: space-between;
 }
 
 
-.input-field:hover,
 .input-field:focus,
-.comment-field:hover,
-.comment-field:focus,
-.input-svg:hover {
+.comment-field:focus{
   border-color: var(--accent-color);
   outline: none;
 }
 
-.input-field:focus + .input-svg,
-.input-field:hover + .input-svg {
+.input-field:focus + .input-svg {
   fill: var(--accent-color);
 }
 
@@ -846,6 +842,6 @@ justify-content: space-between;
 
 .hide-checkbox:checked + .agree-check {
   border: none;
-  fill: var(--accent-text-color);
+  fill: var(--accent-text-color); 
   background-color: var(--accent-color);
 }

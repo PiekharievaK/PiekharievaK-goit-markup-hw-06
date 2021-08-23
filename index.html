@@ -479,64 +479,69 @@
 
         <!-- Поля ввода модалки -->
         <form name="signup_form" class="input-menu">
-          <label  for="Name" class="input">
-            <span class="input-label">Имя</span></label>
-            <div class="input-div">
+          
+          <label class="input">
+               <span class="input-field-lable">Имя</span>
+            <span class="input-label">
+            
               <input
                 type="text"
-                name="Name"
-                id="Name"
+                name="name"
                 placeholder=" "
                 class="input-field"
               />
               <svg class="input-svg" height="18px" width="18px">
                 <use href="./images/symbol.svg#input-name"></use>
-              </svg>
-            </div>
+              </svg> 
+          </span></label>
+            
           
 
-          <label class="input" for="Phone">
-            <span class="input-label">Телефон</span>  </label>
-            <div class="input-div">
+          <label class="input" >
+               <span class="input-field-lable">Телефон</span>
+            <span class="input-label">  
+            
               <input
                 type="tel"
-                name="Phone"
-                id="Phone"
+                name="phone"
                 placeholder=" "
                 class="input-field"/>
               <svg class="input-svg" height="18px" width="18px">
                 <use href="./images/symbol.svg#input-tel"></use>
-              </svg>
-            </div>
+              </svg> </span>
+          </label>
+            
          
 
-          <label class="input" for="Mail">
-            <span class="input-label">Почта</span></label>
-            <div class="input-div">
+          <label class="input">
+               <span class="input-field-lable">Почта</span>
+            <span class="input-label">
+            
               <input   type="email"
-                name="Mail"
-                id="Mail"
+                name="mail"
                 placeholder=" "
                 class="input-field"/>
               <svg class="input-svg" height="18px" width="18px">
                 <use href="./images/symbol.svg#input-mail"></use>
-              </svg>
-            </div>
+              </svg> </span>
+          </label>
+            
           
 
-          <label>
-            <span class="input-label">Комментарий</span>
+          <label class="text-area">
+               <span class="input-field-label">Комментарий</span>
+            
             <textarea
               name="comment"
               rows="10"
               class="comment-field"
-              placeholder="Введите текст"
-            ></textarea>
+              placeholder="Введите текст"></textarea> 
           </label>
+          
         
 
           <label class="contract-agree">
-          <input type="checkbox" name="checkbox" class="hide-checkbox" />
+          <input type="checkbox" name="checkbox" class="hide-checkbox"  required/>
           <svg class="agree-check" width="16px" height="15px">
             <use href="./images/symbol.svg#icon-check"></use>
           </svg>
@@ -547,8 +552,10 @@
 
         <button type="submit" class="modal-submit">Отправить</button>
       </form>
+      
       </div>
     </div>
+    
 
     <script src="./js/modal.js"></script>
   </body>

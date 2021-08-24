@@ -63,13 +63,13 @@
     <main>
       <!--Секция герой-->
 
-      <section class="hero-section">
-        <div class="container">
-          <h1 class="hero-title">
+      <section class="hero-section"> <!-- class=" hero-section" -->
+        <div class="container"> <!-- class="conteiner hero" -->
+          <h1 class="hero-title"> <!-- class="hero__title" -->
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button name="button" class="hero-button" data-modal-open>
+          <button name="button" class="hero-button" data-modal-open> <!-- class="hero__button" -->
             Заказать услугу
           </button>
         </div>
@@ -77,19 +77,19 @@
 
       <!-- Наши преимущества-->
 
-      <section class="section">
-        <div class="container">
-          <h2 class="visually-hidden">Наши преимущества</h2>
+      <section class="section"> <!-- class="section" -->
+        <div class="container"> <!-- class="container  -->
+          <h2 class="visually-hidden">Наши преимущества</h2> 
 
-          <ul class="features-list">
-            <li class="item">
-              <div class="features-icon">
+          <ul class="features-list"> <!-- class="features-list" -->
+            <li class="item"> <!-- class="features-list__item" -->
+              <div class="features-icon"> <!-- class="features-list__icon" -->
                 <svg width="70px" height="70px">
                   <use href="./images/symbol.svg#features-1"></use>
                 </svg>
               </div>
-              <h3 class="features-title">Внимание к деталям</h3>
-              <p class="features-text">
+              <h3 class="features-title">Внимание к деталям</h3> <!-- class="features-list__title" -->
+              <p class="features-text">  <!-- class="features-list__descrittion" -->
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
@@ -135,19 +135,19 @@
       </section>
 
       <!--Чем мы занимаемся-->
-      <section class="work-section section">
-        <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="work-section-list">
-            <li class="item">
-              <div class="exemples-thumb">
+      <section class="work-section section">  <!-- class="work-sektion sektion" -->
+        <div class="container"> <!-- class=" container work" -->
+          <h2 class="section-title">Чем мы занимаемся</h2> <!-- class="work__title" -->
+          <ul class="work-section-list"> <!-- class="work-list" -->
+            <li class="item"> <!-- class="work-list__item" -->
+              <div class="exemples-thumb"> <!-- class="work-list__thumb" -->
                 <img
                   src="./images/box1.webp"
                   alt="руки на клавиатуре перед монитором"
                   width="370"
                   height="294"
-                />
-                <p class="exemples-description">Десктопные приложения</p>
+                /> <!-- class="work-list__" -->
+                <p class="exemples-description">Десктопные приложения</p> <!-- class="work-list__description" -->
               </div>
             </li>
             <li class="item">
@@ -177,25 +177,24 @@
       </section>
 
       <!--Наша команда-->
-      <section class="team-section section">
-        <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="team-list">
-            <li class="item">
+      <section class="team-section section"> 
+        <div class="container"> <!-- class="conteiner team" -->
+          <h2 class="section-title">Наша команда</h2>  <!-- class="team__title" -->
+          <ul class="team-list"> <!-- class="team__cards" -->
+            <li class="item"> <!-- class="team-card" -->
               <img
                 src="./images/img.webp"
                 alt="Улыбающийся мужчина с бородой и в очках"
                 width="270"
-                height="260"
-              />
-              <div class="team-description">
-                <h3 class="team-title">Игорь Демьяненко</h3>
-                <p lang="en" class="team-text">Product Designer</p>
-                <ul class="team-social-links">
-                  <li class="link-item">
-                    <a href="" class="team-soc-link" aria-label="instagram">
+                height="260"/> 
+              <div class="team-description"> <!-- class="team-card__description" -->
+                <h3 class="team-title">Игорь Демьяненко</h3> <!-- class="team-card__title" -->
+                <p lang="en" class="team-text">Product Designer</p> <!-- class="team-card__position" -->
+                <ul class="team-social-links"> <!-- class="team-card__links" -->
+                  <li class="link-item"> <!-- class="team-link" -->
+                    <a href="" class="team-soc-link" aria-label="instagram"> <!-- class="team-link__link" -->
                       <span class="visually-hidden">instagram</span>
-                      <svg width="20px" height="20px">
+                      <svg width="20px" height="20px"> <!-- class="team-link__icon" -->
                         <use href="./images/symbol.svg#icon-instagram"></use>
                       </svg>
                     </a>
@@ -225,6 +224,7 @@
                 </ul>
               </div>
             </li>
+
             <li class="item">
               <img
                 src="./images/img1.webp"
@@ -358,12 +358,12 @@
       </section>
 
       <section class="section">
-        <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="clients">
-            <li class="item">
-              <a href="" class="company-icon" aria-label="company">
-                <svg width="106px" height="60px">
+        <div class="container"> <!-- class="section klients" -->
+          <h2 class="section-title">Постоянные клиенты</h2> <!-- class="klients__title" -->
+          <ul class="clients"> <!-- class="klients__list" -->
+            <li class="item"> <!-- class="klients__item" -->
+              <a href="" class="company-icon" aria-label="company"><!-- class="klients__link" -->
+                <svg width="106px" height="60px"> <!-- class="klients__icon" -->
                   <use href="./images/symbol.svg#company-1"></use></svg></a>
             </li>
             <li class="item">
@@ -467,22 +467,22 @@
 
     <!-- Модальное окно -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal> 
       <div class="modal">
-        <button class="modal-close" data-modal-close>
-          <svg width="11px" height="11px" class="close-icon">
+        <button class="modal-close" data-modal-close> <!-- class="close-button" -->
+          <svg width="11px" height="11px" class="close-icon"> <!-- class="close-button__icon" -->
             <use href="./images/symbol.svg#icon-close"></use>
           </svg>
         </button>
 
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p> <!--class="modal__title"  -->
 
         <!-- Поля ввода модалки -->
-        <form name="signup_form" class="input-menu">
+        <form name="signup_form" class="input-menu"> <!--class="form"  -->
           
-          <label class="input">
-               <span class="input-field-lable">Имя</span>
-            <span class="input-label">
+          <label class="input"> <!--class="inform"  -->
+               <span class="input-field-lable">Имя</span> <!--class="inform__lable"  -->
+            <span class="input-label">  <!--class="inform__input"  -->
             
               <input
                 type="text"
@@ -490,7 +490,7 @@
                 placeholder=" "
                 class="input-field"
               />
-              <svg class="input-svg" height="18px" width="18px">
+              <svg class="input-svg" height="18px" width="18px"> <!--class="inform__icon"  -->
                 <use href="./images/symbol.svg#input-name"></use>
               </svg> 
           </span></label>
@@ -528,8 +528,8 @@
             
           
 
-          <label class="text-area">
-               <span class="input-field-label">Комментарий</span>
+          <label class="text-area"> <!--class="inform "  -->
+               <span class="input-field-label">Комментарий</span> <!--class="inform__lable"  -->
             
             <textarea
               name="comment"
@@ -540,17 +540,17 @@
           
         
 
-          <label class="contract-agree">
-          <input type="checkbox" name="checkbox" class="hide-checkbox"  required/>
-          <svg class="agree-check" width="16px" height="15px">
+          <label class="contract-agree"> <!--class="agreement"  -->
+          <input type="checkbox" name="checkbox" class="hide-checkbox"  required/> <!--class="agreement__hide"  -->
+          <svg class="agree-check" width="16px" height="15px"><!--class="agreement__checkbox"  -->
             <use href="./images/symbol.svg#icon-check"></use>
           </svg>
           <span>
-            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> <!--class="agreement__text"  -->
           </span>
         </label>
 
-        <button type="submit" class="modal-submit">Отправить</button>
+        <button type="submit" class="modal-submit">Отправить</button> <!--class="form__button"  -->
       </form>
       
       </div>

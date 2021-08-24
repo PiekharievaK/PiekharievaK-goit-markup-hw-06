@@ -18,22 +18,23 @@
     <!-- Шапка страницы -->
    
     <header>
-        <div class="header-container container">
-            <nav class=" main-nav">
-                <a href="./" lang="en" class="logo"> <span class="logo-color">Web</span>Studio</a>
-                <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="nav-link">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="nav-link   current-link">Портфолио</a></li>
-                    <li class="item"><a href="#" class="nav-link">Контакты</a></li>
+        <div class="header-container container" >
+            <!-- class="header container"  -->
+            <nav class=" main-nav"> <!-- <nav"> -->
+                <a href="./" lang="en" class="logo">  <!--class="nav__logo logo"  -->  <span class="logo-color">Web</span>Studio</a> <!-- class="logo__color" -->
+                <ul class="site-nav list"> <!-- class="nav__list" -->
+                    <li class="item"><a href="./index.html" class="nav-link" >Студия</a></li><!-- class="nav__item" -->  <!-- class="nav__link" -->
+                    <li class="item"><a href="./portfolio.html" class="nav-link   current-link" >Портфолио</a></li><!-- class="nav__item" --> <!-- class="nav__link current-link" -->
+                    <li class="item"><a href="#" class="nav-link" >Контакты</a></li><!-- class="nav__item" --> <!-- class="nav__link" -->
                 </ul>
             </nav>
             <!-- Контакты-->
-            <ul class="contacts-list">
-                <li class="item"><a href="mailto:info@devstudio.com" class="contacts-link"> <svg width="16px" height="12px">
+            <ul class="contacts-list"> <!-- class="contacts" -->
+                <li class="item"><a href="mailto:info@devstudio.com" class="contacts-link"> <svg width="16px" height="12px" class="contacts__icon"> <!-- class="contacts__item" --> <!-- class="contacts__link" -->
                             <use href="./images/symbol.svg#icon-mail-to"></use>
                         </svg> info@devstudio.com</a>
                 </li>
-                <li class="item"><a href="tel:+380961111111" class="contacts-link"> <svg width="10px" height="16px">
+                <li class="item"><a href="tel:+380961111111" class="contacts-link"> <svg width="10px" height="16px" class="contacts__icon">
                             <use href="./images/symbol.svg#icon-call-to"></use>
                         </svg> +38 096 111 11 11</a>
                 </li>
@@ -45,14 +46,13 @@
 
     <main>
 
-        <section class="portfolio-section section">
+        <section class="portfolio-section section"> <!-- class="portflio section" -->
 
-            <div class="container">
-                <h1 class="visually-hidden"> Портфолио</h1> <!-- Скрыть в css -->
-
+            <div class="container"> <!-- class="conteiner" --> <!-- class="portflio" -->
+                <h1 class="visually-hidden"> Портфолио</h1>  <!-- class="portfolio__title visually-hidden" -->
                 <!--Кнопки сортировки портфолио-->
-                <ul class="filter">
-                    <li class="item"><button type="button" class="filter-button">Все</button></li>
+                <ul class="filter"> <!-- class="filter " -->
+                    <li class="item"><button type="button" class="filter-button">Все</button></li> <!-- class="filter__item" --> <!-- class="filter__button" -->
                     <li class="item"><button type="button" class="filter-button">Веб-сайты</button></li>
                     <li class="item"><button type="button" class="filter-button">Приложения</button></li>
                     <li class="item"><button type="button" class="filter-button">Дизайн</button></li>
@@ -62,22 +62,22 @@
                 <!-- Примеры работ -->
 
 
-                <ul class="work-exemples-list">
-                    <li class="item">
+                <ul class="work-exemples-list"> <!-- class="work-exemples" -->
+                    <li class="item"> <!-- class="exemples-kard" -->
                      
-                        <a href="#" class="work-exemples-link">
-                            <div class="exemples-thumb">
-                                <img src="./images/portfolio1.webp"
-                                alt="ноутбук с карточками людей на экране" width=370 height=294>
-                                <div class="exemples-overflow">
+                        <a href="#" class="work-exemples-link"> <!-- class="exemples-kard__link" -->
+                            <div class="exemples-thumb"> <!-- class="exemples-kard__thumb" -->
+                                <img src="./images/portfolio1.webp"  
+                                alt="ноутбук с карточками людей на экране" width=370 height=294> <!-- class="exemples-kard__img" -->
+                                <div class="exemples-overflow"> <!-- class="exemples-kard__owerflow" -->
                                     Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.
                                 </div>
                             </div>
                                 
-                            <div class="card-description">
-                                <h2 class="work-exemples-title">Технокряк</h2>
-                                <p class="work-exemples-text">Веб-сайт</p>
+                            <div class="card-description"> <!-- class="exemples-kard__description-field" -->
+                                <h2 class="work-exemples-title">Технокряк</h2> <!-- class="exempses-kard__title" -->
+                                <p class="work-exemples-text">Веб-сайт</p> <!-- class="exemples-kard__text" -->
                             </div>
                         </a>
 
@@ -228,36 +228,36 @@
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
-        <div class="footer-container container">
-          <div class="footer-contacts">
-            <a href="./" lang="en" class="footer-logo">
-              <span class="logo-color">Web</span>Studio</a
-            >
-            <address class="address">
-              <ul class="address-list">
-                <li class="address-item">г. Киев, пр-т Леси Украинки, 26</li>
-                <li class="contact-list-item">
-                  <a href="mailto:info@devstudio.com" class="contacts-link">
-                    info@devstudio.com</a
-                  >
+    <footer class="footer"> <!-- class="foooter-section" -->
+        <div class="footer-container container"> <!-- class="footer container" -->
+          <div class="footer-contacts"> <!-- class="foooter-contacts__logo" -->
+            <a href="./" lang="en" class="footer-logo"> <!-- class="foooter-contacts__logo logo" -->
+              <span class="logo-color">Web</span>Studio</a > <!-- clas="logo__color" -->
+
+            <address class="address">  <!-- class="address" -->
+              <ul class="address-list">  <!-- class="address__list" -->
+                <li class="address-item">г. Киев, пр-т Леси Украинки, 26</li> <!-- class="address__direction" -->
+                <li class="contact-list-item"> <!-- class="address__contacts" -->
+                  <a href="mailto:info@devstudio.com" class="contacts-link"> <!-- class="address__link" -->
+                    info@devstudio.com</a>
+
                 </li>
-                <li class="contact-list-item">
-                  <a href="tel:+380961111111" class="contacts-link"
-                    >+38 096 111 11 11</a
-                  >
+                <li class="contact-list-item"> <!-- class="address__contacts" -->
+                  <a href="tel:+380961111111" class="contacts-link" 
+                    >+38 096 111 11 11</a> <!-- class="address__link" -->
+
                 </li>
               </ul>
             </address>
           </div>
   
-          <div class="join-us">
-            <h3 class="join-us-title">Присоединяйтесь</h3>
-            <ul class="social-links">
-              <li class="item">
-                <a href="" class="soc-link" aria-label="instagram">
-                  <span class="visually-hidden">instagram</span>
-                  <svg width="20px" height="20px" aria-label="instagram">
+          <div class="join-us"> <!-- class="join-us__" -->
+            <h3 class="join-us-title">Присоединяйтесь</h3> <!-- class="join-us__title" -->
+            <ul class="social-links"> <!-- class="join-us__list" -->
+              <li class="item"> <!-- class="join-us__item" -->
+                <a href="" class="soc-link" aria-label="instagram"> <!-- class="join-us__link" -->
+                  <span class="visually-hidden">instagram</span> <!-- class="visually-hidden" -->
+                  <svg width="20px" height="20px" aria-label="instagram"> <!-- class="join-us__icon" -->
                     <use href="./images/symbol.svg#icon-instagram"></use>
                   </svg>
                 </a>
@@ -281,14 +281,15 @@
                     <use href="./images/symbol.svg#icon-linkedin"></use></svg></a>
               </li>
             </ul>
+
           </div>
-          <div class="subscribe">
-            <p class="subscribe-title">Подпишитесь на рассылку</p>
-            <form name="subscribe" class="subscribe-menu">
-              <input type="email" class="subscribe-mail" placeholder="E-mail" />
-              <button  type="submit" class="subscribe-button">
-                <span class="subscribe-content">Подписаться</span>
-                <svg class="subscribe-svg" width="24" height="24">
+          <div class="subscribe"> <!-- class="subscribe__" -->
+            <p class="subscribe-title">Подпишитесь на рассылку</p> <!-- class="subscribe__title" -->
+            <form name="subscribe" class="subscribe-menu"> <!-- class="subscribe__form" -->
+              <input type="email" class="subscribe-mail" placeholder="E-mail" /> <!-- class="subscribe__field" -->
+              <button  type="submit" class="subscribe-button"> <!-- class="subscribe-button" -->
+                <span class="subscribe-content">Подписаться</span> <!-- class="subscribe-button__content" -->
+                <svg class="subscribe-svg" width="24" height="24"><!-- class="subscribe-button__icon" -->
                   <use href="./images/symbol.svg#icon-subscribe"></use>
                 </svg>
               </button>

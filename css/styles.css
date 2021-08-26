@@ -532,7 +532,7 @@ header {
 
 /* Футер */
 .footer {
-   width: 100%;
+   width: 1200px;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--dark-background-collor);
